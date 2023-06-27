@@ -3,8 +3,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
-  get '/about', :to => 'home#About'
+  get '/about', :to => 'home#about'
   get '/blog', :to => 'home#blog'
-  get '/services', :to => 'home#tx2'
+  get '/service', :to => 'home#service'
   get '/contact', :to => 'home#contact'
 end
