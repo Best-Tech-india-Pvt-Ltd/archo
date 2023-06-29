@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   get '/services', :to => 'home#service'
   get '/blog', :to => 'home#blog'
   get '/contact_us', :to => 'home#contact'
-  get '/about', :to => 'home#about'
+  get '/about', :to => 'home#about', as: 'about'
+  get '/book_appoinment', :to => 'appointments#new'
 end
