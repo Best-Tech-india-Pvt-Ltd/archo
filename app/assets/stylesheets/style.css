@@ -1,4 +1,4 @@
-body {
+<<<<<<< HEAD body {
     line-height: 1.7;
     color: #4d4d4d;
     font-weight: 400;
@@ -476,10 +476,12 @@ body {
     }
 }
 
+=======>>>>>>>design
 
+/* next 1111111111111111111111111111111111111111111111 */
 #navbarSupportedContent {
 
-    /* justify-content: space-around; */
+
     justify-content: end;
 }
 
@@ -575,8 +577,7 @@ body {
     flex-wrap: wrap;
     margin-right: -15px;
     margin-left: -15px;
-    /* min-height: 85px;
-      height: calc(5vh); */
+    margin-left: 1rem;
 
 }
 
@@ -589,10 +590,7 @@ body {
 
 }
 
-.row.cd {
-    /* min-height: 300px;
-      height: calc(50vh); */
-}
+
 
 a:hover {
     color: #ea728c;
@@ -670,6 +668,9 @@ a:hover {
 
 .text {
     margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+
 }
 
 /* coursel   */
@@ -680,9 +681,6 @@ a:hover {
     color: gray;
 }
 
-/* p{
-    display: block;
-  } */
 
 
 .secc {
@@ -718,17 +716,582 @@ a:hover {
 @media only screen and (max-width:320px) {
     .display-3 {
         font-size: 1.8rem !important;
-
+        margin-top: -3rem;
     }
 }
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:575px) {
     .info2 {
-        height: 26rem;
+        height: 36rem;
         margin-top: -54px;
     }
 }
 
-@media only screen and (max-width:600px) {
-    .our {}
+@media only screen and (max-width:992px) {
+    .display-3 {
+        font-size: 1.5rem !important;
+        margin-top: -3rem;
+    }
 }
+
+/* @media  only screen and (max-width:768px)  {
+    .display-3{
+        font-size: 1.8rem !important;
+        margin-top: -3rem;
+    }
+  } */
+@media only screen and (max-width:992px) {
+    .btn1 {
+        width: 136px;
+        font-size: small;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .btn1 {
+        width: 100px;
+        font-size: small;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .btn1 {
+        width: 120px !important;
+        font-size: x-small;
+        height: 35px !important;
+    }
+}
+
+@media only screen and (max-width:770px) {
+    .display-4 {
+        font-size: 40px
+    }
+}
+
+@media only screen and (max-width:345px) {
+    .btn1 {
+        width: 104px;
+        font-size: xx-small;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width:298px) {
+    .btn1 {
+        width: 136px;
+        font-size: xx-small;
+        height: 20px;
+    }
+}
+
+/* next 222222222222222222222222222222222222222222222222    */
+
+#navbarSupportedContent {
+    justify-content: end;
+}
+
+.first {
+    background-image: url("assets/physiotherapy-montreal-west-island-2.jpg");
+    background-position: 50% 18.5%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: opacity, transform;
+    min-height: 600px;
+    height: calc(100vh);
+}
+
+.container.ab {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4rem;
+}
+
+.btn1 {
+    background-color: purple;
+    margin-right: 2rem;
+    width: 280px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.acolour {
+    color: purple;
+}
+
+.display-3 {
+    color: white;
+}
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid purple;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: purple
+    }
+}
+
+.our {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+/* animation 2 */
+.counter {
+    width: 100px;
+    font: 800 40px system-ui;
+    overflow: hidden;
+    margin-top: 28px;
+}
+
+.numbers {
+    width: auto;
+    display: flex;
+    animation: countNumber 4s infinite alternate;
+    animation-timing-function: steps(10);
+}
+
+.numbers div {
+    text-align: center;
+    flex: 0 0 100px;
+}
+
+@keyframes countNumber {
+    0% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: -1000px;
+    }
+}
+
+/* animation 3*/
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+.animation3 {
+    animation: counter 10s infinite alternate ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    margin-left: 2rem;
+    margin-top: 28px;
+}
+
+.animation3::after {
+    content: counter(num);
+}
+
+@keyframes counter {
+    from {
+        --num: 0;
+    }
+
+    to {
+        --num: 100;
+    }
+}
+
+/* end animation */
+.secc {
+    padding: 0%;
+    margin-top: 20px;
+    display: flex;
+}
+
+.secc li {
+    list-style: none;
+}
+
+.secc li a {
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: flex;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.list-unstyled li a {
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+}
+
+/* @media  only screen and (max-width:320px)  {
+        .display-3{
+            font-size: 1.8rem !important;
+        }
+    }
+    @media  only screen and (max-width:992px)  {
+      .display-3{
+          font-size: 1.8rem !important;
+          margin-top: -3rem;
+      }
+    }
+    @media  only screen and (max-width:600px)  {
+      .btn1{
+        width: 136px;
+        font-size: xx-small;
+        height: 50px;
+      }
+    }
+    @media  only screen and (max-width:345px)  {
+      .btn1{
+        width: 136px;
+        font-size: xx-small;
+        height: 35px;
+      }
+    }
+    @media  only screen and (max-width:298px)  {
+      .btn1{
+        width: 136px;
+        font-size: xx-small;
+        height: 25px;
+      }
+    } */
+/* next 33333333333333333333333333333333333333333333333333333 */
+
+body {
+    line-height: 1.7;
+    color: #4D4D4D;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.box {
+    padding-left: 40px;
+}
+
+.row1 {
+    text-align: center;
+    margin-right: 0px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    margin-left: 0px;
+}
+
+.ctn {
+    text-align: inherit;
+    background-image: url("assets/person_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    ;
+    background-color: purple;
+    /* max-width: 1740px; */
+}
+
+.btn {
+    padding-right: 0px;
+    padding-left: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    height: 40px;
+    padding-left: 0px;
+}
+
+.btn1 {
+    background-color: purple;
+    margin-right: 2rem;
+    width: 280px;
+    border: none;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+}
+
+.row {
+    margin-right: 0px;
+}
+
+.mbb {
+    margin-top: -80px;
+}
+
+.h-entry .h-entry-inner {
+    padding: 6px;
+    border: 1px solid #eee;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.bg {
+    background-color: rgb(219, 229, 232);
+    padding-top: 0px;
+}
+
+.site-section {
+    padding-bottom: 50px;
+
+}
+
+.container {
+    max-width: 1140px;
+}
+
+.list-unstyled li a {
+    list-style: none;
+    text-decoration: none;
+    color: gray;
+}
+
+.secc {
+    display: flex;
+    padding: 0%;
+    margin-top: 20px;
+}
+
+.secc li {
+    list-style: none;
+}
+
+.secc li a {
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: flex;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.px-5 {
+    padding-left: 0px;
+}
+
+@media (max-width: 768px) {
+    .secc {
+        display: flex;
+    }
+
+    .bnr {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        max-width: 320px;
+    }
+}
+
+@media(max-width:568px) {
+    .secc {
+        display: flex;
+    }
+
+}
+
+@media(max-width:650px) {
+    .secc {
+        display: flex;
+    }
+
+}
+
+.btnsend {
+    border-radius: 12px;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: purple;
+}
+
+.acolour {
+    color: purple;
+}
+
+.contact {
+
+    margin-top: 34px;
+}
+
+.bg1 {
+    margin-left: 0px;
+
+}
+
+.bgm {
+    margin-bottom: 20px;
+    padding: 0px;
+    margin-top: 20px;
+
+    background-color: #eee;
+}
+
+#navbarSupportedContent {
+
+    justify-content: end;
+}
+
+.first {
+    background-image: url("assets/physiotherapy-montreal-west-island-2.jpg");
+    background-position: 50% 18.5%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-property: opacity, transform;
+    min-height: 600px;
+    height: calc(100vh);
+}
+
+.container.ab {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 4rem;
+}
+
+.display-3 {
+    color: white;
+}
+
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid #EA728C;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: #EA728C
+    }
+}
+
+/* @media  only screen and (max-width:320px)  {
+                .display-3{
+                    font-size: 1.8rem !important;
+                }
+            }
+            @media  only screen and (max-width:992px)  {
+                .display-3{
+                    font-size: 1.8rem !important;
+                    margin-top: -3rem;
+                }
+              }
+              @media  only screen and (max-width:600px)  {
+                .btn1{
+                  width: 136px;
+                  font-size: xx-small;
+                  height: 50px;
+                }
+              }
+              @media  only screen and (max-width:989px)  {
+                .mbb{
+                    margin-top: -30px
+                }
+              }
+              @media  only screen and (max-width:345px)  {
+                .btn1{
+                  width: 136px;
+                  font-size: xx-small;
+                  height: 35px;
+                }
+              }
+              @media  only screen and (max-width:298px)  {
+                .btn1{
+                  width: 136px;
+                  font-size: xx-small;
+                  height: 25px;
+                }
+              } */
+
+/* enddddddddddddddddddddddddddddddddddddddd */
